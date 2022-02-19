@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <link rel="icon" href="./assets/img/svg/favicon.svg"/>
+    <title>Movie App</title>
+</head>
+<body>
+    <div class="container">
+        <header class="bg-dark">
+            <a href="index.html" class="logo-wrapper alt-page">
+                <img src="./assets/img/svg/favicon.svg" alt="logo" class="logo">
+                <h2 class="text-header">MovieBox</h2>
+            </a>
+            <div class="lang">
+                <img src="" alt="english language" class="lang-button">
+            </div>
+        </header>
+        <main>
+            <div class="only-scroll"></div>
+            <section class="cards movie-cards-wrapper">
+                <div class="heading-wrapper">
+                    <h3 class="movie-header cards-header" data-i18="popular-movie">Popular Movie</h3>
+                </div>
+                <div class="cards-wrapper movie results">
+                    <template id="movie">
+                        <a href="" class="single-card-wrapper">
+                            <div class="img-overview-container">
+                                <img class="card-poster" src="" alt="video-poster"/>
+                                <div class="overlay">
+                                    <p class="overview-title" data-i18="overview">Overview</p>
+                                    <p class="overview"></p>
+                                </div>
+                            </div>
+                            <div class="card-date"></div>
+                            <div class="card-title"></div>
+                            <div class="card-rate-wrapper">
+                                <img class="card-rating-img" src="./assets/img/svg/imdb.svg" alt="imdb-rating-image" />
+                                <p class="card-rating"></p>
+                            </div>
+                            <div class="card-genres"></div>
+                        </a>
+                    </template>
+                </div>
+            </section>
+            <section class="cards tv-cards-wrapper">
+                <div class="heading-wrapper">
+                    <h3 class="cards-header tv-header" data-i18="popular-tv">Popular TV shows</h3>
+                </div>
+                <div class="cards-wrapper tv results">
+                    <template id="tv">
+                        <a href="" class="single-card-wrapper">
+                            <div class="img-overview-container">
+                                <img class="card-poster" src="" alt="video-poster"/>
+                                <div class="overlay">
+                                    <p class="overview-title" data-i18="overview">Overview</p>
+                                    <p class="overview"></p>
+                                </div>
+                            </div>
+                            <div class="card-date"></div>
+                            <div class="card-title"></div>
+                            <div class="card-rate-wrapper">
+                                <img class="card-rating-img" src="./assets/img/svg/imdb.svg" alt="imdb-rating-image" />
+                                <p class="card-rating"></p>
+                            </div>
+                            <div class="card-genres"></div>
+                        </a>
+                    </template>
+                </div>
+            </section>
+            <section class="cards people-cards-wrapper">
+                <div class="heading-wrapper">
+                    <h3 class="cards-header people-header" data-i18="popular-people">Popular People</h3>
+                </div>
+                <div class="cards-wrapper people results">
+                    <template id="people">
+                        <a href="" class="single-card-wrapper">
+                            <div class="img-overview-container">
+                                <img class="card-poster" src="" alt="video-poster"/>
+                                <div class="overlay">
+                                    <p class="overview-title" data-i18="known-for">Known for</p>
+                                    <div class="overview"><ul class="known-for"></ul></div>
+                                </div>
+                            </div>
+                            <div class="card-date"></div>
+                            <div class="card-title"></div>
+                            <div class="card-rate-wrapper">
+                                <img class="card-rating-img" src="./assets/img/svg/imdb.svg" alt="imdb-rating-image" />
+                                <p class="card-rating"></p>
+                            </div>
+                            <div class="card-genres"></div>
+                        </a>
+                    </template>
+                </div>
+            </section>
+            <div class="load-more" data-i18="load-more">Load more</div>
+            <button class="return-top" title="Return top">
+                <img src="./assets/img/svg/up-arrow.svg" alt="scroll-top-arrow"/>
+            </button>
+        </main>
+        <footer class="footer">
+            <div class="social">
+                <a href="https://github.com/dokahp" target="blank">
+                    <img src="./assets/img/svg/github.svg" alt="My github" class="git">
+                </a>
+                <a href="https://www.linkedin.com/in/vitaliy-dreko-938b87228/" target="_blank">
+                    <img src="./assets/img/svg/linkedin.svg" alt="My linkedin" class="linkedin"/>
+                </a>
+            </div>
+            <p class="powered">© 2022 MovieBox by Vitaliy Dreko</p>
+            <a href="https://rs.school/js-stage0/" target="_blank">
+                <img src="./assets/img/svg/rss.svg" alt="Rolling Scrope School" class="rss">
+            </a>
+        </footer>
+    </div>
+    <script type="module" src="./assets/seemore.js"></script>
+</body>
+</html>
