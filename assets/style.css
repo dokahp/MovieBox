@@ -33,6 +33,7 @@ p {
     margin: 0;
 }
 .container {
+    position: relative;
     width: 100vw;
     max-width: 1920px;
 }
