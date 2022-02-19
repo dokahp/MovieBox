@@ -110,7 +110,8 @@ const changeSliderData = (data, i) => {
     currentSlide = i
     sliderElementIndicator.forEach(el => el.classList.remove('active'))
     document.querySelector(`[data-slide-number="${i}"]`).classList.add('active')
-    if (sliderData[i].trailerList) {
+    
+    if (sliderData[i].trailerList && sliderData[i].trailerList.length) {
         sliderTrailerBtn.style.setProperty('display', 'flex')
         sliderTrailerBtn.href = `https://youtu.be/${sliderData[i].trailerList[0].key}`
     } else {
